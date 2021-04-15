@@ -3,7 +3,7 @@
     <detail v-if="modal">
       <button @click="closeModal">Close</button>
       <h3>{{ detail.title }}</h3>
-      <img :src="detail.image" />
+      <img lazy-load :src="detail.image" />
       <h4>SHOW TIME</h4>
       <h4>{{ detail.showTime }}</h4>
       <p>
@@ -26,7 +26,7 @@
           class="flex flex-jc-sb flex-ai-c flex-fd-c"
         >
           <h3>{{ movie.title }}</h3>
-          <img :src="movie.image" />
+          <img lazy-load :src="movie.image" />
           <h4>SHOW TIME</h4>
           <h4>{{ movie.showTime }}</h4>
         </div>
